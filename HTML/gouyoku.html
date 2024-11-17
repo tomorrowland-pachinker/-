@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pachinko music2</title>
+</head>
+<body>
+<h1>超強欲の音を聞け!!</h1>
+<video id="myVideo" width="640" height="360" controls>
+  <source src="gouyoku.mp4" type="video/mp4">
+  お使いのブラウザは動画再生に対応していません。
+</video>
+<br>
+<button onclick="playVideo()">動画を再生</button>
+    <br>
+    <br>
+
+
+<script>
+  function playVideo() {
+      const video = document.getElementById('myVideo');
+      video.muted = false; // 音声を有効化
+      video.play();
+  }
+</script>
+<a href="sakibare.html">もう一度先バレを聴きたい方はこちらへ</a>
+</body>
+</html>
